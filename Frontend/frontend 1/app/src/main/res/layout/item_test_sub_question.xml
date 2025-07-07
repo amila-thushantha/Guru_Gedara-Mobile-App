@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvSubQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manameregular"
+        android:layout_marginTop="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="පහත පින්තූර වලින් බල්ලා තෝරන්න?"
+        android:textSize="18sp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/questionImageSection"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="5dp"
+        app:cardCornerRadius="25dp">
+
+        <ImageView
+            android:id="@+id/questionImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Answer Image"
+            app:srcCompat="@drawable/finger_1"
+            android:scaleType="centerInside" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/answersRecyclerViewSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#E4E4E4"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="25dp">
+        <!-- RecyclerView for answers -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/answersRecyclerView"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/equationSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/indicatorContainer">
+        <TextView
+            android:id="@+id/op_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/plusjakartasansmedium"
+            android:text="3"
+            android:textColor="@color/btnBlack"
+            android:textSize="34sp"
+            android:padding="15sp"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#D0D0D0"
+            app:cardCornerRadius="25dp">
+            <TextView
+                android:id="@+id/operator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/plusjakartasansbold"
+                android:text="+"
+                android:textColor="@color/purple_1"
+                android:textSize="34sp"
+                android:padding="15sp"
+                android:layout_marginTop="-10sp"/>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/op_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/plusjakartasansmedium"
+            android:text="2"
+            android:textColor="@color/btnBlack"
+            android:textSize="34sp"
+            android:padding="15sp"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#D0D0D0"
+            app:cardCornerRadius="25dp">
+            <TextView
+                android:id="@+id/equal_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/plusjakartasansbold"
+                android:text="="
+                android:textColor="@color/purple_1"
+                android:textSize="34sp"
+                android:padding="15sp"
+                android:layout_marginTop="-10sp"/>
+        </androidx.cardview.widget.CardView>
+        <EditText
+            android:id="@+id/answer_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="\?"
+            android:inputType="number"
+            android:textColorHint="@color/placeholder"
+            android:fontFamily="@font/plusjakartasansbold"
+            android:layout_marginStart="10sp"
+            android:textColor="@color/btnBlack"
+            android:textSize="34sp"
+            android:padding="15sp"
+            android:background="@drawable/dotted_border"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/answerInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="\?"
+        android:inputType="number"
+        android:textColorHint="@color/placeholder"
+        android:fontFamily="@font/plusjakartasansbold"
+        android:layout_marginStart="10sp"
+        android:textColor="@color/btnBlack"
+        android:textSize="34sp"
+        android:padding="15sp"
+        android:layout_margin="20sp"
+        android:background="@drawable/dotted_border"/>
+
+
+</LinearLayout>

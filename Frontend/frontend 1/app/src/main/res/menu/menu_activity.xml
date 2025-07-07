@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/baseline_dashboard_24"
+            android:title="නිවහන"/>
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/baseline_account_circle_24"
+            android:title="ගිණුම"/>
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/baseline_info_24"
+            android:title="අපි ගැන"/>
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/baseline_app_settings_alt_24"
+            android:title="සැකසුම්"/>
+    </group>
+    <item
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/logout_48px"
+                android:title="ලොග් අවුට්"/>
+        </menu>
+    </item>
+</menu>

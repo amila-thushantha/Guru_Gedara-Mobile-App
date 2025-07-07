@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fmarjunnsinhala"
+            android:text="m%;sM,"
+            android:textColor="@color/Heading"
+            android:textSize="44sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/confidence"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fmarjunnsinhala"
+            android:gravity="center"
+            android:text="m%Yakdj,sfha ,l=Kq"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/score" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fontFamily="@font/plusjakartasansmedium"
+            android:gravity="center"
+            android:textColor="@color/correct"
+            android:text="44%"
+            android:textSize="34sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heading"/>
+
+        <TextView
+            android:id="@+id/tv56789"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fmarjunnsinhala"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/purple_1"
+            android:text="yeÕSï úYaf,aIK m%;sM,"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confidence" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/emotionRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/errorSection" />
+
+        <LinearLayout
+            android:id="@+id/errorSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv56789"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/error_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/incorrect_img"/>
+            <TextView
+                android:id="@+id/errorDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fmarjunnsinhala"
+                android:gravity="center"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_marginTop="10dp"
+                android:text="uqyqKla wkdjrKh fkdùh'"
+                android:textSize="24sp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/bgClr_1"
+            android:fontFamily="@font/fmarjunnsinhala"
+            android:textSize="24sp"
+            android:text="msg fjkak"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emotionRecyclerView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+<!--    <color name="Heading">#d4b102</color>-->
+<!--    <color name="subHead">#e67e9e</color>-->
+
+    <color name="Heading">#070707</color>
+    <color name="subHead">#4b4b4b</color>
+    <color name="subText">#888888</color>
+
+    <color name="inputBack">#f5f5f5</color>
+    <color name="placeholder">#b5b5b5</color>
+
+    <color name="btnBack">#181824</color>
+
+    <color name="btnBlack">#181824</color>
+<!--    <color name="btnBlack">#ff7700</color>-->
+
+    <color name="navBackBtn">#191919</color>
+    <color name="uploadPfpBtn">#94007AFF</color>
+<!--    <color name="uploadPfpBtn">#ba9c3c</color>-->
+
+    <color name="bgClr_1">#85ADFF</color>
+    <color name="bgClr_1_dark">#5089FF</color>
+
+    <color name="bgClr_2">#7EFF8F</color>
+    <color name="bgClr_2_dark">#4DFF64</color>
+
+    <color name="bgClr_3">#F785FF</color>
+    <color name="bgClr_3_dark">#F34FFF</color>
+
+<!--    <color name="bgClr_1">#3F51B5</color>-->
+<!--    <color name="bgClr_1_dark">#5089FF</color>-->
+
+<!--    <color name="bgClr_2">#2EADA1</color>-->
+<!--    <color name="bgClr_2_dark">#59FFEF</color>-->
+
+<!--    <color name="bgClr_3">#B933C3</color>-->
+<!--    <color name="bgClr_3_dark">#F34FFF</color>-->
+
+    <color name="rule_clr">#94007AFF</color>
+
+    <color name="correct">#4CAF50</color>
+    <color name="incorrect">#E91E1E</color>
+
+    <color name="purple_1">#4857cc</color>
+<!--    <color name="purple_1">#ff7700</color>-->
+</resources>

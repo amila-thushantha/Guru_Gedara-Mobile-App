@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ගුරු ගෙදර</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+
+    <string name="appname_start">.=re</string>
+    <string name="appname_end">f.or</string>
+    <string name="welcome_to_app">ගුරු ගෙදර ඩිජිටල් තක්සලාවට සාදරයෙන් පිලිගන්නවා!</string>
+    <string name="guide_1st_line">l%shdldrlï</string>
+    <string name="guide_2nd_line">ud¾f.damfoaYh</string>
+</resources>

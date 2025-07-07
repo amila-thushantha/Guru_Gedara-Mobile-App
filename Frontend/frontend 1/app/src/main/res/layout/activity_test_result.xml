@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.TestResultActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/scrollView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/scrollView2">
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="110dp"
+                    android:layout_height="120dp"
+                    app:srcCompat="@drawable/results_animal_image" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fmarjunnsinhala"
+                        android:text="mÍlaIKfha"
+                        android:textColor="@color/purple_1"
+                        android:textSize="44sp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fmarjunnsinhala"
+                        android:text="m%;sM,"
+                        android:textColor="@color/Heading"
+                        android:textSize="34sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginTop="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+                app:srcCompat="@drawable/test_results_banner" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fmarjunnsinhala"
+                    android:text="mÍlaIKh wdrïN lsÍfï§ wms Tfnka my; f;dr;=re /ia lf\u003Cuq'"
+                    android:textSize="26sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10sp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView34"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fmarjunnsinhala"
+                            android:text="kj;u .‚; úNd. ,l=Kq -"
+                            android:textColor="@color/purple_1"
+                            android:textSize="26sp" />
+
+                        <TextView
+                            android:id="@+id/mathsExamView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/plusjakartasansmedium"
+                            android:paddingStart="5sp"
+                            android:text="0%"
+                            android:textColor="@color/btnBlack"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView36"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fmarjunnsinhala"
+                            android:text="kj;u isxy, úNd. ,l=Kq -"
+                            android:textColor="@color/purple_1"
+                            android:textSize="26sp" />
+
+                        <TextView
+                            android:id="@+id/sinhalaExamView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/plusjakartasansmedium"
+                            android:paddingStart="5sp"
+                            android:text="0%"
+                            android:textColor="@color/btnBlack"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView388"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fmarjunnsinhala"
+                    android:text="Tn ksjerÈj ms,s;=re ÿka .Kk my; Èiafõ'"
+                    android:textSize="26sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10sp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView349"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fmarjunnsinhala"
+                            android:text="ksjerÈ .‚; .Kk -"
+                            android:textColor="@color/purple_1"
+                            android:textSize="26sp" />
+
+                        <TextView
+                            android:id="@+id/mathsCorrectCount"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/plusjakartasansmedium"
+                            android:paddingStart="5sp"
+                            android:text="0/4"
+                            android:textColor="@color/btnBlack"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView369"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fmarjunnsinhala"
+                            android:text="ksjerÈ isxy, .Kk -"
+                            android:textColor="@color/purple_1"
+                            android:textSize="26sp" />
+
+                        <TextView
+                            android:id="@+id/sinhalaCorrectCount"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/plusjakartasansmedium"
+                            android:paddingStart="5sp"
+                            android:text="0/4"
+                            android:textColor="@color/btnBlack"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView3885"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fmarjunnsinhala"
+                    android:text="by; f;dr;=re i,ld ne,Sfï§\u0022 Tng ÿ¾j,;djhla we;s nj y÷kd .;a;d' Tn ÿ¾j, jkafka my; úYfhks'"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:id="@+id/prediction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fmarjunnsinhala"
+                    android:gravity="center"
+                    android:text=".‚;h"
+                    android:textColor="@color/btnBlack"
+                    android:textSize="44sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/closeBtn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="20sp"
+                android:backgroundTint="@color/purple_1"
+                android:fontFamily="@font/fmarjunnsinhala"
+                android:padding="15dp"
+                android:textSize="24sp"
+                android:text="msg fjkak"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout8" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

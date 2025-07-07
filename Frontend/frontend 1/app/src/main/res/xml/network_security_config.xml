@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">www.youtube.com</domain>
+        <!-- Add domains for YouTube -->
+    </domain-config>
+
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <!-- Specify additional trust anchors here if needed -->
+        </trust-anchors>
+    </base-config>
+</network-security-config>

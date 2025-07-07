@@ -1,0 +1,50 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ElementaryApp" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+<!--        <item name="colorPrimary">@color/white</item>-->
+    </style>
+
+    <style name="Theme.ElementaryApp" parent="Base.Theme.ElementaryApp" />
+
+    <style name="TransparentAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="textInput">
+        <item name="android:padding">16dp</item>
+        <item name="drawableTint">@color/placeholder</item>
+        <item name="android:background">@color/inputBack</item>
+        <item name="android:textColorHint">@color/placeholder</item>
+        <item name="android:fontFamily">@font/plusjakartasansbold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="drawableSize">14dp</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:width">300dp</item>
+    </style>
+
+    <style name="name" parent="textInput">
+        <item name="android:drawableLeft">@drawable/baseline_account_circle_24</item>
+    </style>
+
+    <style name="email" parent="textInput">
+        <item name="android:drawableLeft">@drawable/mail_24px</item>
+    </style>
+
+    <style name="marks" parent="textInput">
+        <item name="android:drawableRight">@drawable/percent_24px</item>
+    </style>
+
+    <style name="password" parent="textInput">
+        <item name="android:drawableLeft">@drawable/key_24px</item>
+        <item name="android:drawableRight">@drawable/visibility_24px</item>
+    </style>
+
+<!--    <style name="SplashTheme" parent="Theme.SplashScreen">-->
+<!--        <item name="windowSplashScreenBackground">#364D62</item>-->
+<!--        <item name="windowSplashScreenAnimatedIcon">@drawable/logo_transparent</item>-->
+<!--        <item name="windowSplashScreenIconBackgroundColor">#364D62</item>-->
+<!--        <item name="postSplashScreenTheme">@style/Theme.Dementia_App</item>-->
+<!--    </style>-->
+</resources>
